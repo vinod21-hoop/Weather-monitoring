@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>cssLink}}
+    <title>Page not found</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/snow.png" type="image/x-icon">
+</head>
+<body>
+    <!-- navbar -->
+    {{>navbar}}
+
+    <!-- errorBody -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    
+                    <div class="col-md-6 main_header_left align-items-center mx-auto">
+                        <figure>
+                            <img src="images/404.png" class="img-fluid" alt="404 image">
+                        </figure>
+                        <h1>{{errMsg}}</h1>
+                        <p>Seems like you're lost..</p>
+                        <a href="/"><button>Go Home</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer -->
+    {{>footer}}
+
+    {{>jsLink}}
+</body>
+</html>
